@@ -38,7 +38,7 @@
 
 <body class="bg-white text-slate-800">
 
-  <header class="fixed top-0 left-0 w-full z-50 bg-[#0B1C2D]/90 backdrop-blur-md border-b border-[#D4AF37]/20">
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#0B1C2D]/50 backdrop-blur-md border-b border-[#D4AF37]/20">
   <div class="max-w-6xl mx-auto px-4">
     <div class="flex items-center justify-between h-16">
       <!-- Brand -->
@@ -88,13 +88,22 @@
 </header>
 
   <!-- HERO -->
+<!-- HERO -->
 <section id="home" class="space-hero relative overflow-hidden">
+
+  <!-- Background Video -->
+  <video class="hero-bg-video" autoplay muted loop playsinline>
+    <source src="star.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay (dark for readability) -->
+  <div class="hero-overlay"></div>
+
   <div class="max-w-6xl mx-auto px-4 hero-body relative">
     <div class="hero-content text-center">
 
       <p id="welcomeBadge" class="hero-welcome">
         <span id="typeTarget"></span>
-        <span class="caret">|</span>
       </p>
 
       <h1 id="brandTitle" class="hero-title opacity-0">
@@ -112,22 +121,15 @@
 
     </div>
   </div>
-      </div>
 
-      <!-- trust chips -->
-      <div class="mt-10 flex flex-wrap justify-center gap-3 text-sm">
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white/80 backdrop-blur">
-          ⚡ Fast Delivery
-        </span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white/80 backdrop-blur">
-          🎯 Brand-Focused
-        </span>
-        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white/80 backdrop-blur">
-          📈 Growth Mindset
-        </span>
-      </div>
+  <!-- trust chips (keep yours here if you want) -->
+  <div class="mt-10 flex flex-wrap justify-center gap-3 text-sm relative">
+      <span class="chip">⚡ Fast Delivery</span>
+      <span class="chip">🎯 Brand-Focused</span>
+      <span class="chip">📈 Growth Mindset</span>
     </div>
-  </section>
+
+</section>
 
   <!-- Services -->
   <section id="services" class="bg-slate-50 border-y border-slate-100">
@@ -319,7 +321,7 @@
   <!-- Footer -->
   <footer class="border-t border-slate-100">
     <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-slate-600">© <span id="year"></span> ContentVerse . Studio. All rights reserved.</p>
+      <p class="text-sm text-slate-600">© <span id="year"></span> ContentVerse . Studio | All rights reserved.</p>
       <div class="flex gap-5 text-sm font-medium">
         <a class="hover:text-brand-700" href="#services">Services</a>
         <a class="hover:text-brand-700" href="#portfolio">Portfolio</a>
