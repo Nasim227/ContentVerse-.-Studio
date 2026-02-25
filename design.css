@@ -718,7 +718,7 @@ html, body{
 }
 
 
-@media (max-width: 400px){
+@media (max-width: 480px){
   .photography-wrapper{
     margin-top: -55px;
   }
@@ -733,8 +733,28 @@ html, body{
 
   /* Mobile stack style (clean and safe) */
   .pimg1{ width: 38%; height: 60%; left: 0; top: 0px; }
-  .pimg2{ width: 60%; height: 19%; left: 142px; top: 229px; }
-  .pimg3{ width: 60%; height: 20%; left: 142px; top: 110px; }
+  .pimg2{ width: 60%; height: 19%; left: 172px; top: 229px; }
+  .pimg3{ width: 60%; height: 20%; left: 172px; top: 110px; }
+  .pimg4{ width: 99%; height: 35%; left: 0; top: 350px; }
+}
+
+@media (max-width: 360px){
+  .photography-wrapper{
+    margin-top: -55px;
+  }
+  .photography-text h2{
+    font-size: 32px;
+  }
+
+  .photography-images{
+   height: 560px;          /* was 320px */
+    margin-bottom: 20px;
+  }
+
+  /* Mobile stack style (clean and safe) */
+  .pimg1{ width: 45%; height: 60%; left: 0; top: 0px; }
+  .pimg2{ width: 55%; height: 19%; left: 150px; top: 229px; }
+  .pimg3{ width: 55%; height: 20%; left: 150px; top: 110px; }
   .pimg4{ width: 99%; height: 35%; left: 0; top: 350px; }
 }
 
