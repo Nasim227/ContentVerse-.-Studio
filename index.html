@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ContentVerse . Studio</title>
 
+   <link rel="icon" type="image/png" href="logo1.png" />
+
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="design.css">
 
   <script>
     tailwind.config = {
@@ -33,302 +34,578 @@
 }
   </script>
 
-  
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="design.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="bg-white text-slate-800">
 
+  <!-- Header -->
   <header class="fixed top-0 left-0 w-full z-50 bg-[#0B1C2D]/50 backdrop-blur-md border-b border-[#D4AF37]/20">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="flex items-center justify-between h-16">
-      <!-- Brand -->
-      <a href="#home" class="flex items-center gap-2 font-bold">
-        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-600 text-white">CV</span>
-        <span class="text-white">ContentVerse . Studio</span>
-      </a>
-
-      <!-- Desktop Nav -->
-      <div class="hidden md:flex items-center gap-6">
-        <nav class="flex items-center gap-6 text-sm font-medium text-white/90">
-          <a class="hover:text-[#D4AF37]" href="#services">Services</a>
-          <a class="hover:text-[#D4AF37]" href="#portfolio">Portfolio</a>
-          <a class="hover:text-[#D4AF37]" href="#about">About</a>
-          <a class="hover:text-[#D4AF37]" href="#contact">Contact</a>
-          <a class="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700"
-             href="#contact">Get a Quote</a>
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand -->
+        <nav class="navbar">
+          <div class="nav-left">
+            <img src="logo1.png" alt="ContentVerse Logo" class="nav-logo">
+            <span class="nav-brand">ContentVerse <span class="gold-dot">.</span> Studio</span>
+          </div>
         </nav>
 
-        <!-- Top-right welcome animation -->
-        <div class="nav-welcome flex items-center gap-2 pl-2" style="animation: glowPulse 2.6s ease-in-out infinite;">
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-6">
+          <nav class="flex items-center gap-6 text-sm font-medium text-white/90">
+            <a class="hover:text-brand-600" href="#services">Services</a>
+            <a class="hover:text-brand-600" href="#photography">Portfolio</a>
+            <a class="hover:text-brand-600" href="#about">About</a>
+            <a class="hover:text-brand-600" href="#contact">Contact</a>
+            <a class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2 text-white hover:bg-brand-700"
+              href="#contact">Get a Quote</a>
+          </nav>
+
+          <div class="nav-welcome flex items-center gap-2 pl-2" style="animation: glowPulse 2.6s ease-in-out infinite;">
           <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
           <span class="text-sm font-semibold text-[#D4AF37]">Welcome ✨</span>
         </div>
       </div>
 
-      <!-- Mobile button -->
-      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/20 p-2 text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
+        <!-- Mobile button -->
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/20 p-2 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
 
-    <!-- Mobile Nav -->
-    <div id="mobileNav" class="md:hidden hidden pb-4">
-      <div class="flex flex-col gap-2 text-sm font-medium text-white/90">
-        <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#services">Services</a>
-        <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#portfolio">Portfolio</a>
-        <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#about">About</a>
-        <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#contact">Contact</a>
-        <a class="mt-2 inline-flex items-center justify-center rounded-xl bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700"
-           href="#contact">Get a Quote</a>
+      <!-- Mobile Nav -->
+      <div id="mobileNav" class="md:hidden hidden pb-4">
+        <div class="flex flex-col gap-2 text-sm font-medium text-white/90">
+          <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#services">Services</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#photography">Portfolio</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#about">About</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#contact">Contact</a>
+          <a class="mt-2 inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2 text-white hover:bg-brand-700"
+             href="#contact">Get a Quote</a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <!-- HERO -->
-<!-- HERO -->
-<section id="home" class="space-hero relative overflow-hidden">
+  <section id="home" class="space-hero relative overflow-hidden">
 
-  <!-- Background Video -->
-  <video class="hero-bg-video" autoplay muted loop playsinline>
-    <source src="star.mp4" type="video/mp4">
-  </video>
+    <!-- Background Video -->
+    <video class="hero-bg-video" autoplay muted loop playsinline>
+      <source src="star.mp4" type="video/mp4">
+    </video>
 
-  <!-- Overlay (dark for readability) -->
-  <div class="hero-overlay"></div>
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
 
-  <div class="max-w-6xl mx-auto px-4 hero-body relative">
-    <div class="hero-content text-center">
+    <div class="max-w-6xl mx-auto px-4 hero-body relative">
+      <div class="hero-content text-center">
 
-      <p id="welcomeBadge" class="hero-welcome">
-        <span id="typeTarget"></span>
-      </p>
+        <!-- Welcome (NO typewriter) -->
+        <p id="welcomeBadge" class="hero-welcome">Welcome to</p>
 
-      <h1 id="brandTitle" class="hero-title opacity-0">
-        ContentVerse <span class="dot">.</span> Studio
-      </h1>
+        <!-- Title (TYPEWRITER here) -->
+        <h1 id="brandTitle" class="hero-title opacity-0">
+          <span id="titleLeft"></span>
+          <span id="titleDot" class="blink-dot hidden">.</span>
+          <span id="titleRight"></span>
+          <span id="titleCaret" class="caret">|</span>
+        </h1>
 
-      <p id="brandSubtitle" class="hero-subtitle opacity-0">
-        Video editing • Graphic design • Content planning • Social media management • Videography
-      </p>
+        <p id="brandSubtitle" class="hero-subtitle opacity-0">
+          Video editing • Graphic design • Content planning • Social media management • Videography
+        </p>
 
-      <div id="heroButtons" class="hero-buttons opacity-0">
-        <a href="#contact" class="primary-btn">Get a Free Consultation</a>
-        <a href="#portfolio" class="secondary-btn">View Work</a>
+        <div id="heroButtons" class="hero-buttons opacity-0">
+          <a href="#contact" class="primary-btn">Get a Free Consultation</a>
+          <a href="#photography" class="secondary-btn">View Work</a>
+        </div>
+
       </div>
-
     </div>
-  </div>
 
-  <!-- trust chips (keep yours here if you want) -->
-  <div class="mt-10 flex flex-wrap justify-center gap-3 text-sm relative">
+    <!-- trust chips -->
+    <div class="mt-10 flex flex-wrap justify-center gap-3 text-sm relative">
       <span class="chip">⚡ Fast Delivery</span>
       <span class="chip">🎯 Brand-Focused</span>
       <span class="chip">📈 Growth Mindset</span>
     </div>
-
-</section>
+  </section>
 
   <!-- Services -->
-  <section id="services" class="bg-slate-50 border-y border-slate-100">
-    <div class="max-w-6xl mx-auto px-4 py-16">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl font-extrabold">Services</h2>
-        <p class="mt-3 text-slate-600">End-to-end content support — from strategy to final post.</p>
-      </div>
+<section id="services" class="services-section">
+  <div class="max-w-7xl mx-auto px-6 py-20">
 
-      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-sm">
-          <div class="h-12 w-12 rounded-2xl bg-brand-100 flex items-center justify-center text-xl">🎬</div>
-          <h3 class="mt-4 font-bold text-xl">Video Editing</h3>
-          <p class="mt-2 text-slate-600">Reels, shorts, ads, YouTube edits — clean, modern, engaging.</p>
-        </div>
-
-        <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-sm">
-          <div class="h-12 w-12 rounded-2xl bg-brand-100 flex items-center justify-center text-xl">🎨</div>
-          <h3 class="mt-4 font-bold text-xl">Graphic Design</h3>
-          <p class="mt-2 text-slate-600">Post designs, banners, brand kits, thumbnails, flyers.</p>
-        </div>
-
-        <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-sm">
-          <div class="h-12 w-12 rounded-2xl bg-brand-100 flex items-center justify-center text-xl">🗓️</div>
-          <h3 class="mt-4 font-bold text-xl">Content Planning</h3>
-          <p class="mt-2 text-slate-600">Monthly calendar, content ideas, hooks, scripts, captions.</p>
-        </div>
-
-        <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-sm">
-          <div class="h-12 w-12 rounded-2xl bg-brand-100 flex items-center justify-center text-xl">📱</div>
-          <h3 class="mt-4 font-bold text-xl">Social Media Management</h3>
-          <p class="mt-2 text-slate-600">Posting, engagement, basic reporting, growth support.</p>
-        </div>
-
-        <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-sm">
-          <div class="h-12 w-12 rounded-2xl bg-brand-100 flex items-center justify-center text-xl">📷</div>
-          <h3 class="mt-4 font-bold text-xl">Videography</h3>
-          <p class="mt-2 text-slate-600">Product shoots, event coverage, cinematic brand videos.</p>
-        </div>
-
-        <div class="rounded-3xl bg-white border border-slate-200 p-6 shadow-sm">
-          <div class="h-12 w-12 rounded-2xl bg-brand-100 flex items-center justify-center text-xl">🚀</div>
-          <h3 class="mt-4 font-bold text-xl">Brand Growth Support</h3>
-          <p class="mt-2 text-slate-600">Creative direction, ad creatives, campaign content.</p>
-        </div>
-      </div>
+    <!-- Heading -->
+    <div class="max-w-2xl mx-auto text-center text-white mb-16">
+      <h2 class="text-4xl font-extrabold text-[#D4AF37] tracking-wide">
+        Our Services
+      </h2>
+      <p class="mt-4 text-white/80">
+        End-to-end content support — from strategy to final post
+      </p>
     </div>
-  </section>
 
-  <!-- Portfolio -->
-  <section id="portfolio">
-    <div class="max-w-6xl mx-auto px-4 py-16">
-      <div class="flex items-end justify-between gap-6">
-        <div class="max-w-2xl">
-          <h2 class="text-3xl font-extrabold">Portfolio</h2>
-          <p class="mt-3 text-slate-600">Replace these placeholders with your real work (images/videos).</p>
+    <div class="services-wrapper">
+
+      <!-- LEFT SIDE FLIP CARDS -->
+      <div class="services-cards">
+
+        <!-- 1 -->
+        <div class="service-flip">
+          <div class="service-flip-inner">
+            <div class="service-front">
+              <div class="service-icon">🎬</div>
+              <h3 class="service-back-title">Video Editing</h3>
+              <p>Reels, shorts, ads, YouTube edits.</p>
+            </div>
+            <div class="service-back">
+              <h3 class="service-back-title">Video Editing</h3>
+              <p class="service-back-desc">Hook-based editing, motion graphics, captions, color grading & storytelling.</p>
+            </div>
+          </div>
         </div>
-        <a href="#contact" class="hidden sm:inline-flex items-center justify-center rounded-xl border border-slate-200 px-5 py-2 font-semibold hover:bg-slate-50">
-          Request Full Portfolio
-        </a>
+
+        <!-- 2 -->
+        <div class="service-flip">
+          <div class="service-flip-inner">
+            <div class="service-front">
+              <div class="service-icon">🎨</div>
+              <h3 class="service-back-title">Graphic Design</h3>
+              <p>Post designs & brand kits.</p>
+            </div>
+            <div class="service-back">
+              <h3 class="service-back-title">Graphic Design</h3>
+              <p class="service-back-desc">Creative visuals, thumbnails, banners, branding systems & ads.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-flip">
+          <div class="service-flip-inner">
+            <div class="service-front">
+              <div class="service-icon">🗓️</div>
+              <h3 class="service-back-title">Content Planning</h3>
+              <p>Strategy & monthly calendar.</p>
+            </div>
+            <div class="service-back">
+              <h3 class="service-back-title">Content Planning</h3>
+              <p class="service-back-desc">Content ideas, hooks, scripts, captions & audience growth strategy.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-flip">
+          <div class="service-flip-inner">
+            <div class="service-front">
+              <div class="service-icon">📱</div>
+              <h3 class="service-back-title">Social Media Management</h3>
+              <p>Posting & engagement.</p>
+            </div>
+            <div class="service-back">
+              <h3 class="service-back-title">Social Media Management</h3>
+              <p class="service-back-desc">Analytics tracking, growth reports & platform optimization.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="service-flip">
+          <div class="service-flip-inner">
+            <div class="service-front">
+              <div class="service-icon">📷</div>
+              <h3 class="service-back-title">Videography</h3>
+              <p>Professional brand videos.</p>
+            </div>
+            <div class="service-back">
+              <h3 class="service-back-title">Videography</h3>
+              <p class="service-back-desc">Product shoots, event coverage & cinematic brand storytelling.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-flip">
+          <div class="service-flip-inner">
+            <div class="service-front">
+              <div class="service-icon">🚀</div>
+              <h3 class="service-back-title">Brand Growth Support</h3>
+              <p>Scaling & campaigns.</p>
+            </div>
+            <div class="service-back">
+              <h3 class="service-back-title">Brand Growth Support</h3>
+              <p class="service-back-desc">Ad creatives, strategy building & performance marketing guidance.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="rounded-3xl border border-slate-200 overflow-hidden">
-          <div class="h-44 bg-slate-100"></div>
-          <div class="p-5">
-            <h3 class="font-bold">Reels Editing • Fashion Brand</h3>
-            <p class="mt-1 text-sm text-slate-600">Short-form edits with captions + motion graphics.</p>
-          </div>
-        </div>
+      <!-- RIGHT SIDE IMAGES -->
+      <div class="services-images custom-layout">
+  <img src="growth.png"       class="img img1" />
+  <img src="videoediting.png" class="img img2" />
+  <img src="videography.png"  class="img img3" />
+  <img src="social.png"       class="img img4" />
+</div>
 
-        <div class="rounded-3xl border border-slate-200 overflow-hidden">
-          <div class="h-44 bg-slate-100"></div>
-          <div class="p-5">
-            <h3 class="font-bold">Design Pack • Restaurant</h3>
-            <p class="mt-1 text-sm text-slate-600">Menu promos, offers, story templates.</p>
-          </div>
-        </div>
-
-        <div class="rounded-3xl border border-slate-200 overflow-hidden">
-          <div class="h-44 bg-slate-100"></div>
-          <div class="p-5">
-            <h3 class="font-bold">Brand Video • Product Shoot</h3>
-            <p class="mt-1 text-sm text-slate-600">Cinematic cuts + color grading.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+  <!-- Photography Section -->
+<section id="photography" class="photography-section">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="max-w-2xl mx-auto text-center text-white mb-16">
+      <h3 class="text-4xl font-extrabold text-[#D4AF37] tracking-wide">
+        Portfolio
+      </h3>
+    </div>
+
+    <div class="photography-wrapper">
+
+      <!-- LEFT SIDE Images -->
+      <div class="photography-images custom-layout">
+
+        <img src="img1.JPG" class="pimg pimg1" />
+        <img src="img2.JPG" class="pimg pimg2" />
+        <img src="img3.JPG" class="pimg pimg3" />
+        <img src="img4.jpeg" class="pimg pimg4" />
+
+      </div>
+
+      <!-- RIGHT SIDE Text -->
+      <div class="photography-text">
+        <h2>Photography</h2>
+        <p>
+          Capturing authentic moments, powerful storytelling and
+          visually striking compositions. From cultural events
+          to lifestyle and commercial shoots — every frame
+          is crafted with emotion and precision.
+        </p>
+
+        <div class="photo-tags">
+          <span>Event</span>
+          <span>Portrait</span>
+          <span>Documentary</span>
+          <span>Commercial</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO WORK SECTION -->
+<section id="videos" class="videos-section">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-[#D4AF37] tracking-wide">
+        Video Projects
+      </h2>
+      <p class="mt-4 text-white/80">
+        Featured edits published across YouTube and Facebook
+      </p>
+    </div>
+
+    <div class="videos-grid">
+
+      <!-- 1 -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/az66Sl5pDjI"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/h23W5Q_LgEQ"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe 
+            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=688869940178066&show_text=false"
+            allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/B4ySAmZLGWc"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe 
+            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1439302150912270/&show_text=false"
+            allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/D9KjOOJVjDM"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
   <!-- About -->
-  <section id="about" class="bg-slate-50 border-y border-slate-100">
-    <div class="max-w-6xl mx-auto px-4 py-16">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h2 class="text-3xl font-extrabold">About Us</h2>
-          <p class="mt-3 text-slate-600">
-            We’re a creative team focused on clean visuals, strong storytelling, and consistent posting.
-            Our goal is simple: make your brand look premium and help you grow.
-          </p>
+<section id="about" class="about-section">
+  <div class="max-w-7xl mx-auto px-6 py-24 relative z-10">
 
-          <div class="mt-6 grid sm:grid-cols-2 gap-4">
-            <div class="rounded-2xl bg-white border border-slate-200 p-5">
-              <p class="text-sm text-slate-500">Value</p>
-              <p class="mt-1 font-bold">Amanah (Trust)</p>
-              <p class="mt-2 text-sm text-slate-600">Clear communication + honest delivery.</p>
-            </div>
-            <div class="rounded-2xl bg-white border border-slate-200 p-5">
-              <p class="text-sm text-slate-500">Quality</p>
-              <p class="mt-1 font-bold">Itqan (Excellence)</p>
-              <p class="mt-2 text-sm text-slate-600">Details matter — we polish every output.</p>
-            </div>
+    <!-- Heading -->
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-[#D4AF37] tracking-wide">
+        About Us
+      </h2>
+      <p class="mt-4 text-white/80">
+        Clean visuals. Strong storytelling. Strategic growth.
+      </p>
+    </div>
+
+    <div class="about-wrapper">
+
+      <!-- LEFT SIDE -->
+      <div class="about-left">
+
+        <p class="about-description">
+          We’re a creative team focused on premium visuals, powerful storytelling, 
+          and consistent content execution. Our mission is simple —
+          make your brand look high-end and help you grow digitally.
+        </p>
+
+        <div class="about-cards">
+
+          <div class="about-card">
+            <p class="about-card-label">Value</p>
+            <h3>Amanah (Trust)</h3>
+            <p>Clear communication and honest delivery every time.</p>
           </div>
+
+          <div class="about-card">
+            <p class="about-card-label">Quality</p>
+            <h3>Itqan (Excellence)</h3>
+            <p>Details matter — we polish every output to perfection.</p>
+          </div>
+
         </div>
 
-        <div class="rounded-3xl bg-white border border-slate-200 p-7 shadow-sm">
-          <h3 class="text-xl font-bold">Why brands choose us</h3>
-          <ul class="mt-5 space-y-3 text-slate-700">
-            <li class="flex gap-2"><span class="text-brand-700">✓</span> Strong creative direction</li>
-            <li class="flex gap-2"><span class="text-brand-700">✓</span> Fast turnaround</li>
-            <li class="flex gap-2"><span class="text-brand-700">✓</span> Social-first content strategy</li>
-            <li class="flex gap-2"><span class="text-brand-700">✓</span> Clean design & modern edits</li>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="about-right">
+        <div class="about-box">
+          <h3 class="about-box-title">Why brands choose us</h3>
+
+          <ul class="about-list">
+            <li><span class="check">✓</span> Strong creative direction</li>
+            <li><span class="check">✓</span> Fast turnaround</li>
+            <li><span class="check">✓</span> Social-first strategy</li>
+            <li><span class="check">✓</span> Clean design & modern edits</li>
           </ul>
         </div>
       </div>
+
     </div>
-  </section>
+
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-[#D4AF37] tracking-wide">
+        <br>
+        <br>
+        <br>
+        Where Creativity Meets Strategy
+      </h2>
+    </div>
+
+  </div>
+</section>
 
   <!-- Contact -->
-  <section id="contact">
-    <div class="max-w-6xl mx-auto px-4 py-16">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl font-extrabold">Contact</h2>
-        <p class="mt-3 text-slate-600">Tell us what you need — we’ll reply ASAP.</p>
+<section id="contact" class="contact-section">
+  <div class="max-w-7xl mx-auto px-6 py-24 relative z-10">
+
+    <!-- Heading -->
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-[#D4AF37] tracking-wide">
+        Contact Us
+      </h2>
+      <p class="mt-4 text-white/80">
+        Tell us what you need — we’ll reply ASAP.
+      </p>
+    </div>
+
+    <div class="contact-wrapper">
+
+      <!-- LEFT: Info -->
+      <div class="contact-card">
+        <h3 class="contact-card-title">Ready to Elevate Your Brand Presence?</h3>
+        <p class="mt-2 text-white/75">
+          Share your brand, goals, and content type. We’ll suggest a plan.
+        </p>
+
+        <div class="contact-info">
+
+          <!-- Row 1: text -->
+          <div class="contact-top">
+            <p><span class="label">Email:</span> *************</p>
+            <p><span class="label">WhatsApp:</span> *************</p>
+          </div>
+
+          <!-- Row 2: icons -->
+          <div class="contact-icons">
+            <a href="mailto:your@email.com" class="social-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://wa.me/880XXXXXXXXXX" target="_blank" class="social-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61585562416794" target="_blank" class="social-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://tiktok.com/@yourprofile" target="_blank" class="social-icon">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://tiktok.com/@yourprofile" target="_blank" class="social-icon">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="contact-badges">
+          <span>Fast Reply</span>
+          <span>Premium Quality</span>
+          <span>Flexible Packages</span>
+        </div>
       </div>
 
-      <div class="mt-10 grid lg:grid-cols-2 gap-8">
-        <div class="rounded-3xl border border-slate-200 p-7">
-          <h3 class="text-xl font-bold">Let’s work together</h3>
-          <p class="mt-2 text-slate-600">Share your brand, goals, and content type. We’ll suggest a plan.</p>
-
-          <div class="mt-6 space-y-3 text-sm">
-            <p><span class="font-semibold">Email:</span> *************</p>
-            <p><span class="font-semibold">WhatsApp:</span> *************</p>
-            <p><span class="font-semibold">Location:</span> Dhaka, Bangladesh</p>
+      <!-- RIGHT: Form -->
+      <form class="contact-form" action="#" method="POST">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="form-label">Name</label>
+            <input class="form-input" type="text" name="name" placeholder="Your name" required>
+          </div>
+          <div>
+            <label class="form-label">Email</label>
+            <input class="form-input" type="email" name="email" placeholder="you@email.com" required>
           </div>
         </div>
 
-        <form class="rounded-3xl border border-slate-200 p-7 shadow-sm bg-white" action="#" method="POST">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label class="text-sm font-semibold">Name</label>
-              <input class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-100"
-                     type="text" name="name" placeholder="Your name" required>
-            </div>
-            <div>
-              <label class="text-sm font-semibold">Email</label>
-              <input class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-100"
-                     type="email" name="email" placeholder="you@email.com" required>
-            </div>
-          </div>
+        <div class="mt-4">
+          <label class="form-label">Service</label>
+          <select class="form-input" name="service">
+            <option>Video Editing</option>
+            <option>Graphic Design</option>
+            <option>Content Planning</option>
+            <option>Social Media Management</option>
+            <option>Videography</option>
+            <option>Other</option>
+          </select>
+        </div>
 
-          <div class="mt-4">
-            <label class="text-sm font-semibold">Service</label>
-            <select class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-100" name="service">
-              <option>Video Editing</option>
-              <option>Graphic Design</option>
-              <option>Content Planning</option>
-              <option>Social Media Management</option>
-              <option>Videography</option>
-              <option>Other</option>
-            </select>
-          </div>
+        <div class="mt-4">
+          <label class="form-label">Message</label>
+          <textarea class="form-input" name="message" rows="5"
+            placeholder="Tell us your goal, deadline, and budget (optional)" required></textarea>
+        </div>
 
-          <div class="mt-4">
-            <label class="text-sm font-semibold">Message</label>
-            <textarea class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-100"
-                      name="message" rows="5" placeholder="Tell us your goal, deadline, and budget (optional)" required></textarea>
-          </div>
+        <button class="contact-btn" type="submit">
+          Coming Soon !!
+        </button>
+      </form>
 
-          <button class="mt-6 w-full rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold hover:bg-brand-700" type="submit">
-            Coming Soon !!
-          </button>
-        </form>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-100">
-    <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-slate-600">© <span id="year"></span> ContentVerse . Studio | All rights reserved.</p>
-      <div class="flex gap-5 text-sm font-medium">
-        <a class="hover:text-brand-700" href="#services">Services</a>
-        <a class="hover:text-brand-700" href="#portfolio">Portfolio</a>
-        <a class="hover:text-brand-700" href="#contact">Contact</a>
+<footer class="footer-section">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="footer-wrapper">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-brand-top">
+          <img src="logo1.png" alt="ContentVerse Logo" class="footer-logo-img">
+          <h3 class="footer-logo-text">
+            ContentVerse <span class="gold-dot">.</span> Studio
+          </h3>
+        </div>
+
+        <p class="footer-tagline">
+          Crafting premium visuals. Elevating brands digitally.
+        </p>
       </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#photography">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Social -->
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/profile.php?id=61585562416794" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/yourprofile" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://tiktok.com/@yourprofile" target="_blank">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+
     </div>
-  </footer>
+
+    <!-- Bottom Line -->
+    <div class="footer-bottom">
+      © <span id="year"></span> ContentVerse . Studio | All rights reserved.
+    </div>
+
+  </div>
+</footer>
 
   <script>
     // Footer year
@@ -337,61 +614,95 @@
     // Mobile menu toggle
     const menuBtn = document.getElementById("menuBtn");
     const mobileNav = document.getElementById("mobileNav");
-    menuBtn.addEventListener("click", () => mobileNav.classList.toggle("hidden"));
-    mobileNav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => mobileNav.classList.add("hidden")));
+    if (menuBtn && mobileNav) {
+      menuBtn.addEventListener("click", () => mobileNav.classList.toggle("hidden"));
+      mobileNav.querySelectorAll("a").forEach(a =>
+        a.addEventListener("click", () => mobileNav.classList.add("hidden"))
+      );
+    }
 
-    // --- TYPEWRITER + SEQUENCED ANIMATION (every refresh) ---
-    const text = "Welcome to";
-    const typeTarget = document.getElementById("typeTarget");
+    // ---- HERO ANIMATION ----
+    const heroStartDelay = 400; // ✅ Delay everything by 1s
+
     const welcomeBadge = document.getElementById("welcomeBadge");
 
     const brandTitle = document.getElementById("brandTitle");
     const brandSubtitle = document.getElementById("brandSubtitle");
     const heroButtons = document.getElementById("heroButtons");
 
-    // timings
-    const typeSpeed = 75;          // ms per character
-    const afterTypePause = 350;    // pause after typing ends
-    const moveDuration = 650;      // should match the CSS animation duration we set below
+    const titleLeft = document.getElementById("titleLeft");
+    const titleDot = document.getElementById("titleDot");
+    const titleRight = document.getElementById("titleRight");
+    const titleCaret = document.getElementById("titleCaret");
 
-    // reset in case browser caches
-    typeTarget.textContent = "";
+    const moveDuration = 650; // welcome zoom-out duration
+    const typeSpeed =50;     // typing speed
+    const afterTypingDelay = 250;
 
-    function typeWriter(i = 0) {
-      if (i < text.length) {
-        typeTarget.textContent += text.charAt(i);
-        setTimeout(() => typeWriter(i + 1), typeSpeed);
-      } else {
-        // after typing completes, move welcome up + shrink
-        setTimeout(() => {
-          welcomeBadge.style.animation = `welcomeMove ${moveDuration}ms ease forwards`;
+    function typeTitle() {
+      const leftText = "ContentVerse";
+      const rightText = " Studio";
 
-          // show title/subtitle/buttons after welcome starts moving
-          setTimeout(() => {
-            brandTitle.style.animation = "titleIn 900ms ease forwards";
-            brandTitle.style.opacity = 1;
+      titleLeft.textContent = "";
+      titleRight.textContent = "";
+      titleDot.classList.add("hidden");
+      titleCaret.style.display = "inline-block";
 
-            brandSubtitle.style.animation = "titleIn 900ms ease forwards";
-            brandSubtitle.style.opacity = 1;
+      // show title container for typing
+      brandTitle.style.opacity = 1;
+      brandTitle.style.animation = "none";
 
-            heroButtons.style.animation = "titleIn 900ms ease forwards";
-            heroButtons.style.opacity = 1;
-          }, 420);
-        }, afterTypePause);
+      let i = 0;
+      function typeLeftPart() {
+        if (i < leftText.length) {
+          titleLeft.textContent += leftText.charAt(i++);
+          setTimeout(typeLeftPart, typeSpeed);
+        } else {
+          titleDot.classList.remove("hidden");
+
+          let j = 0;
+          function typeRightPart() {
+            if (j < rightText.length) {
+              titleRight.textContent += rightText.charAt(j++);
+              setTimeout(typeRightPart, typeSpeed);
+            } else {
+              titleCaret.style.display = "none";
+
+              setTimeout(() => {
+                brandSubtitle.style.animation = "titleIn 900ms ease forwards";
+                brandSubtitle.style.opacity = 1;
+
+                heroButtons.style.animation = "titleIn 900ms ease forwards";
+                heroButtons.style.opacity = 1;
+              }, afterTypingDelay);
+            }
+          }
+          setTimeout(typeRightPart, typeSpeed);
+        }
       }
+
+      typeLeftPart();
     }
 
-    // Start on every page load/refresh
     window.addEventListener("load", () => {
-      // hide title parts initially (ensures repeat on refresh)
+      // reset
       brandTitle.style.opacity = 0;
       brandSubtitle.style.opacity = 0;
       heroButtons.style.opacity = 0;
 
-      // remove any previous welcome animation and retype
+      // hide welcome initially (so it doesn’t appear instantly)
+      welcomeBadge.style.opacity = 0;
       welcomeBadge.style.animation = "none";
-      void welcomeBadge.offsetWidth; // reflow hack to reset animation
-      typeWriter(0);
+      void welcomeBadge.offsetWidth;
+
+      setTimeout(() => {
+        // show welcome and animate it
+        welcomeBadge.style.opacity = 1;
+        welcomeBadge.style.animation = `welcomeMove ${moveDuration}ms ease forwards`;
+
+        // start typing title
+        typeTitle();
+      }, heroStartDelay);
     });
   </script>
 </body>
