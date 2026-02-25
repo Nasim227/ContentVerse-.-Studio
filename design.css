@@ -14,6 +14,8 @@ body {
 
 html, body{
   background: #050a1e;
+  
+  overflow-x: hidden;
 }
 
 .nav-left{
@@ -44,7 +46,7 @@ html, body{
 
 .space-hero {
   position: relative;
-  padding-top: 215px;
+  padding-top: 190px;
   padding-bottom: 160px;
   overflow: hidden;
   box-shadow: 0 50px 60px -40px rgba(0, 0, 0, 0.8);
@@ -506,6 +508,11 @@ html, body{
 
 /* ✅ Tablets */
 @media (max-width: 768px){
+  #services {
+    margin-top: -100px !important;
+    scroll-margin-top: 80px; /* optional, if you use anchor links */
+  }
+
   .services-cards{
     grid-template-columns: 1fr;  /* 1 card per row */
     gap: 18px;
@@ -528,8 +535,19 @@ html, body{
 
 /* ✅ Phones */
 @media (max-width: 480px){
+  #services {
+    margin-top: -100px !important;
+    scroll-margin-top: 80px; /* optional, if you use anchor links */
+    margin-bottom: -110px !important;
+  }
+
   .services-section{
     background-attachment: scroll;   /* fixed is buggy on mobile */
+  }
+
+   .services-cards{
+    grid-template-columns:repeat(2, 1fr);  /* 1 card per row */
+    gap: 18px;
   }
 
   .service-front,
@@ -676,9 +694,9 @@ html, body{
 
   /* Tablet collage layout (all % based) */
   .pimg1{ width: 30%; height: 100%; left: 0; top: 0; }
-  .pimg2{ width: 50%; height: 50%; left: 260px; top: 30px; }
-  .pimg3{ width: 37%; height: 40%; left: 252px; top: 277px; }
-  .pimg4{ width: 30%; height: 36%; left: 560px; top: 290px; }
+  .pimg2{ width: 50%; height: 50%; left: 230px; top: 30px; }
+  .pimg3{ width: 37%; height: 40%; left: 230px; top: 277px; }
+  .pimg4{ width: 30%; height: 36%; left: 510px; top: 290px; }
 
 }
 
@@ -697,6 +715,27 @@ html, body{
   .pimg2{ width: 55%; height: 50%; left: 170px; top: 30px; }
   .pimg3{ width: 37%; height: 37%; left: 170px; top: 201px; }
   .pimg4{ width: 30%; height: 36%; left: 375px; top: 201px; }
+}
+
+
+@media (max-width: 400px){
+  .photography-wrapper{
+    margin-top: -55px;
+  }
+  .photography-text h2{
+    font-size: 32px;
+  }
+
+  .photography-images{
+   height: 560px;          /* was 320px */
+    margin-bottom: 20px;
+  }
+
+  /* Mobile stack style (clean and safe) */
+  .pimg1{ width: 38%; height: 60%; left: 0; top: 0px; }
+  .pimg2{ width: 60%; height: 19%; left: 142px; top: 229px; }
+  .pimg3{ width: 60%; height: 20%; left: 142px; top: 110px; }
+  .pimg4{ width: 99%; height: 35%; left: 0; top: 350px; }
 }
 
 
@@ -895,8 +934,12 @@ html, body{
 
 /* Responsive */
 @media (max-width: 1024px){
+  #about{
+    margin-bottom: -50px;
+  }
   .about-wrapper{
     grid-template-columns: 1fr;
+    margin-bottom: -70px;;
   }
 
   .about-cards{
