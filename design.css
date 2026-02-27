@@ -834,6 +834,110 @@ html, body{
 
 
 
+/* ===== Partner Brands Marquee ===== */
+.partners-section{
+  background: linear-gradient(to bottom, #051d34, #070062);
+  color: #fff;
+  overflow: hidden;
+}
+
+.partners-title{
+  font-size: 28px;
+  font-weight: 800;
+  color: #D4AF37;
+  letter-spacing: 0.5px;
+}
+
+.partners-subtitle{
+  margin-top: 8px;
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+}
+
+.logo-marquee{
+  overflow: hidden;
+  border-radius: 22px;
+  padding: 14px 0;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(10px);
+
+  /* fade edges */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+.logo-track{
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+  width: max-content;
+  animation: marqueeMove 26s linear infinite;
+}
+
+/* Each logo card */
+.logo-item{
+  flex: 0 0 auto;
+  width: 350px;                 /* controls "card width" */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 12px 10px;
+  border-radius: 18px;
+  background: rgba(0,0,0,0.18);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo-item img{
+  height: 180px;                 /* controls logo height */
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+.logo-item figcaption{
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  color: #D4AF37;;
+
+  /* keeps names neat */
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* right-to-left continuous */
+@keyframes marqueeMove{
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(%); }
+}
+
+/* Pause on hover (optional but nice) */
+.logo-marquee:hover .logo-track{
+  animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .logo-item{ width: 140px; }
+  .logo-item img{ height: 44px; }
+  .logo-track{ animation-duration: 22s; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .logo-track{ animation: none; }
+}
+
+
+
+
+
+
 /* ===== ABOUT SECTION ===== */
 
 .about-section{
