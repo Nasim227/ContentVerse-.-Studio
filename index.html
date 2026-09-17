@@ -5,38 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ContentVerse . Studio</title>
 
-   <link rel="icon" type="image/png" href="new transparent.png" />
+  <meta name="description" content="ContentVerse . Studio offers video editing, graphic design, content planning, social media management, and videography services." />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin />
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="icon" type="image/webp" href="site-logo.webp" />
 
-  <script>
-    tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        brand: {
-          50:  "#fef9e7",
-          100: "#fdf2c9",
-          300: "#f5d77a",
-          500: "#e6c65c",
-          600: "#d4af37",
-          700: "#b8962e",
-          900: "#7a5f1a"
-        },
-        navy: {
-          800: "#10273F",
-          900: "#0B1C2D"
-        }
-      }
-    }
-  }
-}
-  </script>
-
-  <!-- Your CSS file -->
   <link rel="stylesheet" href="design.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 
 <body class="bg-white text-slate-800">
@@ -48,13 +25,13 @@
         <!-- Brand -->
         <nav class="navbar">
           <div class="nav-left">
-            <img src="new transparent.png" alt="ContentVerse Logo" class="nav-logo">
+            <img src="site-logo.webp" alt="ContentVerse Logo" class="nav-logo" width="256" height="256" fetchpriority="high" decoding="async">
             <span class="nav-brand">ContentVerse <span class="gold-dot">.</span> Studio</span>
           </div>
         </nav>
 
         <!-- Desktop Nav -->
-        <div class="hidden md:flex items-center gap-6">
+        <div class="desktop-nav hidden md:flex items-center gap-6">
           <nav class="flex items-center gap-6 text-sm font-medium text-white/90">
             <a class="hover:text-brand-600" href="#services">Services</a>
             <a class="hover:text-brand-600" href="#photography">Portfolio</a>
@@ -71,7 +48,7 @@
       </div>
 
         <!-- Mobile button -->
-        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/20 p-2 text-white">
+        <button id="menuBtn" class="mobile-menu-button md:hidden inline-flex items-center justify-center rounded-xl border border-white/20 p-2 text-white" aria-label="Toggle navigation" aria-controls="mobileNav" aria-expanded="false">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -79,7 +56,7 @@
       </div>
 
       <!-- Mobile Nav -->
-      <div id="mobileNav" class="md:hidden hidden pb-4">
+      <div id="mobileNav" class="mobile-nav-panel md:hidden hidden pb-4">
         <div class="flex flex-col gap-2 text-sm font-medium text-white/90">
           <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#services">Services</a>
           <a class="rounded-lg px-3 py-2 hover:bg-white/10" href="#photography">Portfolio</a>
@@ -96,7 +73,7 @@
   <section id="home" class="space-hero relative overflow-hidden ">
 
     <!-- Background Video -->
-    <video class="hero-bg-video" autoplay muted loop playsinline>
+    <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
       <source src="star.mp4" type="video/mp4">
     </video>
 
@@ -157,7 +134,7 @@
       <div class="services-cards">
 
         <!-- 1 -->
-        <div class="service-flip">
+        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Video Editing">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">🎬</div>
@@ -172,7 +149,7 @@
         </div>
 
         <!-- 2 -->
-        <div class="service-flip">
+        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Graphic Design">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">🎨</div>
@@ -187,7 +164,7 @@
         </div>
 
         <!-- 3 -->
-        <div class="service-flip">
+        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Content Planning">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">🗓️</div>
@@ -202,7 +179,7 @@
         </div>
 
         <!-- 4 -->
-        <div class="service-flip">
+        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Social Media Management">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">📱</div>
@@ -217,7 +194,7 @@
         </div>
 
         <!-- 5 -->
-        <div class="service-flip">
+        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Videography">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">📷</div>
@@ -232,7 +209,7 @@
         </div>
 
         <!-- 6 -->
-        <div class="service-flip">
+        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Brand Growth Support">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">🚀</div>
@@ -250,10 +227,10 @@
 
       <!-- RIGHT SIDE IMAGES -->
       <div class="services-images custom-layout">
-  <img src="growth.png"       class="img img1" />
-  <img src="videoediting.png" class="img img2" />
-  <img src="videography.png"  class="img img3" />
-  <img src="social.png"       class="img img4" />
+  <img src="growth.webp"       class="img img1" alt="Business growth strategy" width="461" height="257" loading="lazy" decoding="async" />
+  <img src="videoediting.webp" class="img img2" alt="Video editing service" width="520" height="260" loading="lazy" decoding="async" />
+  <img src="videography.webp"  class="img img3" alt="Videography service" width="292" height="173" loading="lazy" decoding="async" />
+  <img src="social.webp"       class="img img4" alt="Social media management" width="275" height="183" loading="lazy" decoding="async" />
 </div>
 
     </div>
@@ -274,10 +251,10 @@
       <!-- LEFT SIDE Images -->
       <div class="photography-images custom-layout">
 
-        <img src="img1.JPG" class="pimg pimg1" />
-        <img src="img2.JPG" class="pimg pimg2" />
-        <img src="img3.JPG" class="pimg pimg3" />
-        <img src="img4.jpeg" class="pimg pimg4" />
+        <img src="img1.webp" class="pimg pimg1" alt="ContentVerse photography portfolio" width="900" height="1600" loading="lazy" decoding="async" />
+        <img src="img2.webp" class="pimg pimg2" alt="ContentVerse photography portfolio" width="1600" height="785" loading="lazy" decoding="async" />
+        <img src="img3.webp" class="pimg pimg3" alt="ContentVerse photography portfolio" width="1600" height="900" loading="lazy" decoding="async" />
+        <img src="img4.webp" class="pimg pimg4" alt="ContentVerse photography portfolio" width="1600" height="1066" loading="lazy" decoding="async" />
 
       </div>
 
@@ -322,8 +299,8 @@
       <div class="video-card">
         <div class="video-embed">
             <iframe 
-            src="https://www.youtube.com/embed/ZvXtmL4-2wI"
-            allowfullscreen loading="lazy">
+            src="https://www.youtube-nocookie.com/embed/ZvXtmL4-2wI"
+            title="ContentVerse video project" allowfullscreen loading="lazy">
           </iframe>
         </div>
       </div>
@@ -331,40 +308,40 @@
       <!-- 2 -->
       <div class="video-card">
         <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/97kyvob3h_E"
-            allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/97kyvob3h_E"
+            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
         </div> 
       </div>
 
       <!-- 3 -->
       <div class="video-card">
         <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/h23W5Q_LgEQ"
-            allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/h23W5Q_LgEQ"
+            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
         </div>  
       </div>
 
       <!-- 4 -->
       <div class="video-card">
         <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/B4ySAmZLGWc"
-            allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/B4ySAmZLGWc"
+            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
 
       <!-- 5 -->
       <div class="video-card">
         <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/az66Sl5pDjI"
-            allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/az66Sl5pDjI"
+            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
 
       <!-- 6 -->
       <div class="video-card">
         <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/D9KjOOJVjDM"
-            allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/D9KjOOJVjDM"
+            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
 
@@ -389,164 +366,164 @@
 
         <!-- ===== SET A ===== -->
         <figure class="logo-item">
-          <img src="Brands/aoi.jpeg" alt="Ammar's Online Institution (AOI)">
+          <img src="Brands/aoi.webp" alt="Ammar's Online Institution (AOI)" loading="lazy" decoding="async">
           <figcaption>Ammar’s Online Institution</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/archibuild_black_bg.png" alt="Archibuild Solutions">
+          <img src="Brands/archibuild.webp" alt="Archibuild Solutions" loading="lazy" decoding="async">
           <figcaption>Archibuild Solutions</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/bizbro.png" alt="BizBro Podcast">
+          <img src="Brands/bizbro.webp" alt="BizBro Podcast" loading="lazy" decoding="async">
           <figcaption>BizBro Podcast</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/box.jpeg" alt="Mix Box Studio">
+          <img src="Brands/box.webp" alt="Mix Box Studio" loading="lazy" decoding="async">
           <figcaption>Mix Box Studio</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/connectingdots.jpeg" alt="Connecting Dots">
+          <img src="Brands/connectingdots.webp" alt="Connecting Dots" loading="lazy" decoding="async">
           <figcaption>Connecting Dots Bangladesh</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/hazaat.jpeg" alt="Hazaat">
+          <img src="Brands/hazaat.webp" alt="Hazaat" loading="lazy" decoding="async">
           <figcaption>Hazaat</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/Samprotik-Podcast.jpeg" alt="Samprotik Podcast">
+          <img src="Brands/samprotik-podcast.webp" alt="Samprotik Podcast" loading="lazy" decoding="async">
           <figcaption>Samprotik Podcast</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/intifada bd.jpeg" alt="Intifada Bangladesh">
+          <img src="Brands/intifada-bd.webp" alt="Intifada Bangladesh" loading="lazy" decoding="async">
           <figcaption>Intifada Bangladesh</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/paygamedin.jpeg" alt="Pay Game Din">
+          <img src="Brands/paygamedin.webp" alt="Pay Game Din" loading="lazy" decoding="async">
           <figcaption>Poygame Deen</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/prephour.png" alt="Prep Hour Academy">
+          <img src="Brands/prephour.webp" alt="Prep Hour Academy" loading="lazy" decoding="async">
           <figcaption>Prep Hour Academy</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/rihla.jpeg" alt="Rihlah Divine Travels">
+          <img src="Brands/rihla.webp" alt="Rihlah Divine Travels" loading="lazy" decoding="async">
           <figcaption>Rihlah Divine Travels</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/Ramjan.png" alt="Ramjan Electronics">
+          <img src="Brands/ramjan.webp" alt="Ramjan Electronics" loading="lazy" decoding="async">
           <figcaption>Ramjan Electronics</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/rsbd_black_bg.png" alt="RSBD Properties">
+          <img src="Brands/rsbd.webp" alt="RSBD Properties" loading="lazy" decoding="async">
           <figcaption>RSBD Properties</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/Samprotik-Profile.jpg.jpeg" alt="Samprotik">
+          <img src="Brands/samprotik-profile.webp" alt="Samprotik" loading="lazy" decoding="async">
           <figcaption>Samprotik</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/sky_holidays_black_bg.png" alt="Sky Holidays">
+          <img src="Brands/sky-holidays.webp" alt="Sky Holidays" loading="lazy" decoding="async">
           <figcaption>Sky Holidays</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/youthintifadamd.jpeg" alt="Youth Intifada Mohammadpur">
+          <img src="Brands/youth-intifada.webp" alt="Youth Intifada Mohammadpur" loading="lazy" decoding="async">
           <figcaption>Youth Intifada Mohammadpur</figcaption>
         </figure>
 
         <!-- ===== DUPLICATE SET A (for seamless loop) ===== -->
         <!-- Copy the SAME items again (exact order) -->
         <figure class="logo-item">
-          <img src="Brands/aoi.jpeg" alt="Ammar's Online Institution (AOI)">
+          <img src="Brands/aoi.webp" alt="Ammar's Online Institution (AOI)" loading="lazy" decoding="async">
           <figcaption>Ammar’s Online Institution (AOI)</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/archibuild_black_bg.png" alt="Archibuild Solutions">
+          <img src="Brands/archibuild.webp" alt="Archibuild Solutions" loading="lazy" decoding="async">
           <figcaption>Archibuild Solutions</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/bizbro.png" alt="BizBro Podcast">
+          <img src="Brands/bizbro.webp" alt="BizBro Podcast" loading="lazy" decoding="async">
           <figcaption>BizBro Podcast</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/box.jpeg" alt="Mix Box Studio">
+          <img src="Brands/box.webp" alt="Mix Box Studio" loading="lazy" decoding="async">
           <figcaption>Mix Box Studio</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/connectingdots.jpeg" alt="Connecting Dots">
+          <img src="Brands/connectingdots.webp" alt="Connecting Dots" loading="lazy" decoding="async">
           <figcaption>Connecting Dots Bangladesh</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/hazaat.jpeg" alt="Hazaat">
+          <img src="Brands/hazaat.webp" alt="Hazaat" loading="lazy" decoding="async">
           <figcaption>Hazaat</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/intifada bd.jpeg" alt="Intifada Bangladesh">
+          <img src="Brands/intifada-bd.webp" alt="Intifada Bangladesh" loading="lazy" decoding="async">
           <figcaption>Intifada Bangladesh</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/paygamedin.jpeg" alt="Pay Game Din">
+          <img src="Brands/paygamedin.webp" alt="Pay Game Din" loading="lazy" decoding="async">
           <figcaption>Poygame Din</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/Samprotik-Podcast.jpeg" alt="Samprotik Podcast">
+          <img src="Brands/samprotik-podcast.webp" alt="Samprotik Podcast" loading="lazy" decoding="async">
           <figcaption>Samprotik Podcast</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/prephour.png" alt="Prep Hour Academy">
+          <img src="Brands/prephour.webp" alt="Prep Hour Academy" loading="lazy" decoding="async">
           <figcaption>Prep Hour Academy</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/rihla.jpeg" alt="Rihlah Divine Travels">
+          <img src="Brands/rihla.webp" alt="Rihlah Divine Travels" loading="lazy" decoding="async">
           <figcaption>Rihlah Divine Travels</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/Ramjan.png" alt="Ramjan Electronics">
+          <img src="Brands/ramjan.webp" alt="Ramjan Electronics" loading="lazy" decoding="async">
           <figcaption>Ramjan Electronics</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/rsbd_black_bg.png" alt="RSBD Properties">
+          <img src="Brands/rsbd.webp" alt="RSBD Properties" loading="lazy" decoding="async">
           <figcaption>RSBD Properties</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/Samprotik-Profile.jpg.jpeg" alt="Samprotik">
+          <img src="Brands/samprotik-profile.webp" alt="Samprotik" loading="lazy" decoding="async">
           <figcaption>Samprotik</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/sky_holidays_black_bg.png" alt="Sky Holidays">
+          <img src="Brands/sky-holidays.webp" alt="Sky Holidays" loading="lazy" decoding="async">
           <figcaption>Sky Holidays</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/youthintifadamd.jpeg" alt="Youth Intifada Mohammadpur">
+          <img src="Brands/youth-intifada.webp" alt="Youth Intifada Mohammadpur" loading="lazy" decoding="async">
           <figcaption>Youth Intifada Mohammadpur</figcaption>
         </figure>
 
@@ -743,7 +720,7 @@
       <!-- Brand -->
       <div class="footer-brand">
         <div class="footer-brand-top">
-          <img src="new transparent.png" alt="ContentVerse Logo" class="footer-logo-img">
+          <img src="site-logo.webp" alt="ContentVerse Logo" class="footer-logo-img" width="256" height="256" loading="lazy" decoding="async">
           <h3 class="footer-logo-text">
             ContentVerse <span class="gold-dot">.</span> Studio
           </h3>
@@ -796,11 +773,33 @@
     const menuBtn = document.getElementById("menuBtn");
     const mobileNav = document.getElementById("mobileNav");
     if (menuBtn && mobileNav) {
-      menuBtn.addEventListener("click", () => mobileNav.classList.toggle("hidden"));
+      menuBtn.addEventListener("click", () => {
+        const isOpen = mobileNav.classList.toggle("hidden") === false;
+        menuBtn.setAttribute("aria-expanded", String(isOpen));
+      });
       mobileNav.querySelectorAll("a").forEach(a =>
-        a.addEventListener("click", () => mobileNav.classList.add("hidden"))
+        a.addEventListener("click", () => {
+          mobileNav.classList.add("hidden");
+          menuBtn.setAttribute("aria-expanded", "false");
+        })
       );
     }
+
+    // Make service details usable on touchscreens and with a keyboard.
+    document.querySelectorAll(".service-flip").forEach(card => {
+      const toggleCard = () => {
+        const isOpen = card.classList.toggle("is-flipped");
+        card.setAttribute("aria-expanded", String(isOpen));
+      };
+
+      card.addEventListener("click", toggleCard);
+      card.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          toggleCard();
+        }
+      });
+    });
 
     // ---- HERO ANIMATION ----
     const heroStartDelay = 400; // ✅ Delay everything by 1s
@@ -865,7 +864,7 @@
       typeLeftPart();
     }
 
-    window.addEventListener("load", () => {
+    function startHeroAnimation() {
       // reset
       brandTitle.style.opacity = 0;
       brandSubtitle.style.opacity = 0;
@@ -884,7 +883,13 @@
         // start typing title
         typeTitle();
       }, heroStartDelay);
-    });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", startHeroAnimation, { once: true });
+    } else {
+      startHeroAnimation();
+    }
   </script>
 </body>
 </html>
