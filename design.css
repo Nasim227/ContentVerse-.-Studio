@@ -161,6 +161,13 @@ html, body{
   gap: 12px;
 }
 
+.nav-left:focus-visible,
+.footer-brand-top:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
 .nav-logo{
   height: 40px;
   width: auto;
