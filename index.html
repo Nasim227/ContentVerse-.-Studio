@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
   <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin />
 
-   <link rel="icon" type="image/webp" href="site-logo.webp" />
+   <link rel="icon" type="image/webp" href="Assets/site-logo.webp" />
 
   <link rel="stylesheet" href="design.css" />
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -25,7 +25,7 @@
         <!-- Brand -->
         <nav class="navbar">
           <a class="nav-left" href="#home" aria-label="ContentVerse Studio - back to top">
-            <img src="site-logo.webp" alt="ContentVerse Logo" class="nav-logo" width="256" height="256" fetchpriority="high" decoding="async">
+            <img src="Assets/site-logo.webp" alt="ContentVerse Logo" class="nav-logo" width="256" height="256" fetchpriority="high" decoding="async">
             <span class="nav-brand">ContentVerse <span class="gold-dot">.</span> Studio</span>
           </a>
         </nav>
@@ -74,7 +74,7 @@
 
     <!-- Background Video -->
     <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-      <source src="star.mp4" type="video/mp4">
+      <source src="Assets/star.mp4" type="video/mp4">
     </video>
 
     <!-- Overlay -->
@@ -100,7 +100,7 @@
 
         <div id="heroButtons" class="hero-buttons opacity-0">
           <a href="#contact" class="primary-btn">Get a Free Consultation</a>
-          <a href="#photography" class="secondary-btn">View Work</a>
+          <a href="#photography" class="secondary-btn">Explore Our Work</a>
         </div>
 
       </div>
@@ -109,7 +109,7 @@
     <!-- trust chips -->
     <div class="mt-10 flex flex-wrap justify-center gap-3 text-sm relative">
       <span class="chip">⚡ Fast Delivery</span>
-      <span class="chip">🎯 Brand-Focused</span>
+      <span class="chip">🎯 Strong Creative Direction</span>
       <span class="chip">📈 Growth Mindset</span>
     </div>
   </section>
@@ -131,10 +131,10 @@
     <div class="services-wrapper">
 
       <!-- LEFT SIDE FLIP CARDS -->
-      <div class="services-cards">
+      <div class="services-cards" id="servicesCards">
 
         <!-- 1 -->
-        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Video Editing">
+        <div class="service-flip">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">🎬</div>
@@ -149,7 +149,7 @@
         </div>
 
         <!-- 2 -->
-        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Graphic Design">
+        <div class="service-flip">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">🎨</div>
@@ -164,7 +164,7 @@
         </div>
 
         <!-- 3 -->
-        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Content Planning">
+        <div class="service-flip">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">🗓️</div>
@@ -179,7 +179,7 @@
         </div>
 
         <!-- 4 -->
-        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Social Media Management">
+        <div class="service-flip service-mobile-extra">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">📱</div>
@@ -194,7 +194,7 @@
         </div>
 
         <!-- 5 -->
-        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Videography">
+        <div class="service-flip service-mobile-extra">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">📷</div>
@@ -209,7 +209,7 @@
         </div>
 
         <!-- 6 -->
-        <div class="service-flip" role="button" tabindex="0" aria-expanded="false" aria-label="Show details for Brand Growth Support">
+        <div class="service-flip service-mobile-extra">
           <div class="service-flip-inner">
             <div class="service-front">
               <div class="service-icon">🚀</div>
@@ -225,12 +225,14 @@
 
       </div>
 
+      <button class="mobile-expand-button" id="servicesExpandButton" type="button" aria-expanded="false" aria-controls="servicesCards">Show All Services</button>
+
       <!-- RIGHT SIDE IMAGES -->
       <div class="services-images custom-layout">
-  <img src="growth.webp"       class="img img1" alt="Business growth strategy" width="461" height="257" loading="lazy" decoding="async" />
-  <img src="videoediting.webp" class="img img2" alt="Video editing service" width="520" height="260" loading="lazy" decoding="async" />
-  <img src="videography.webp"  class="img img3" alt="Videography service" width="292" height="173" loading="lazy" decoding="async" />
-  <img src="social.webp"       class="img img4" alt="Social media management" width="275" height="183" loading="lazy" decoding="async" />
+  <img src="Assets/growth.webp"       class="img img1" alt="Business growth strategy" width="461" height="257" loading="lazy" decoding="async" />
+  <img src="Assets/videoediting.webp" class="img img2" alt="Video editing service" width="520" height="260" loading="lazy" decoding="async" />
+  <img src="Assets/videography.webp"  class="img img3" alt="Videography service" width="292" height="173" loading="lazy" decoding="async" />
+  <img src="Assets/social.webp"       class="img img4" alt="Social media management" width="275" height="183" loading="lazy" decoding="async" />
 </div>
 
     </div>
@@ -242,7 +244,7 @@
   <div class="max-w-7xl mx-auto px-6 py-10 md:py-20">
     <div class="max-w-2xl mx-auto text-center text-white mb-16">
       <h3 class="text-4xl font-extrabold text-[#D4AF37] tracking-wide">
-        Portfolio
+        Our Works
       </h3>
     </div>
 
@@ -251,10 +253,25 @@
       <!-- LEFT SIDE Images -->
       <div class="photography-images custom-layout">
 
-        <img src="img1.webp" class="pimg pimg1" alt="ContentVerse photography portfolio" width="900" height="1600" loading="lazy" decoding="async" />
-        <img src="img2.webp" class="pimg pimg2" alt="ContentVerse photography portfolio" width="1600" height="785" loading="lazy" decoding="async" />
-        <img src="img3.webp" class="pimg pimg3" alt="ContentVerse photography portfolio" width="1600" height="900" loading="lazy" decoding="async" />
-        <img src="img4.webp" class="pimg pimg4" alt="ContentVerse photography portfolio" width="1600" height="1066" loading="lazy" decoding="async" />
+        <figure class="photo-figure photo-figure-tall">
+          <img src="Assets/img1.webp" alt="Documentary photography on a fruit boat" width="900" height="1600" loading="lazy" decoding="async" />
+          <figcaption><span>Documentary</span><strong>Stories in motion</strong></figcaption>
+        </figure>
+
+        <figure class="photo-figure photo-figure-portrait">
+          <img src="Assets/img4.webp" alt="Portrait and field photography" width="1600" height="1066" loading="lazy" decoding="async" />
+          <figcaption><span>Portrait</span><strong>People and purpose</strong></figcaption>
+        </figure>
+
+        <figure class="photo-figure photo-figure-culture">
+          <img src="Assets/img3.webp" alt="Cultural landscape at sunset" width="1600" height="900" loading="lazy" decoding="async" />
+          <figcaption><span>Culture</span><strong>Place and atmosphere</strong></figcaption>
+        </figure>
+
+        <figure class="photo-figure photo-figure-event">
+          <img src="Assets/img2.webp" alt="Community event photography" width="1600" height="785" loading="lazy" decoding="async" />
+          <figcaption><span>Event</span><strong>Community moments</strong></figcaption>
+        </figure>
 
       </div>
 
@@ -284,71 +301,59 @@
 <section id="videos" class="videos-section">
   <div class="max-w-7xl mx-auto px-6 py-10 md:py-20">
 
-    <div class="max-w-2xl mx-auto text-center mb-16">
-      <h2 class="text-4xl font-extrabold text-[#D4AF37] tracking-wide">
-        Video Projects
-      </h2>
-      <p class="mt-4 text-white/80">
-        Featured edits published across YouTube and Facebook
-      </p>
+    <div class="videos-heading">
+      <div>
+        <p class="videos-kicker">Motion Work</p>
+        <h2>Featured video projects</h2>
+      </div>
     </div>
 
-    <div class="videos-grid">
+    <div class="videos-grid" id="videosGrid">
+      <button class="video-project" type="button" data-video="ZvXtmL4-2wI" data-title="Featured edit 01" aria-label="Play Featured edit 01">
+        <img src="https://i.ytimg.com/vi/ZvXtmL4-2wI/hqdefault.jpg" alt="Thumbnail for Featured edit 01" loading="lazy" decoding="async" />
+        <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+      </button>
 
-      <!-- 1 -->
-      <div class="video-card">
-        <div class="video-embed">
-            <iframe 
-            src="https://www.youtube-nocookie.com/embed/ZvXtmL4-2wI"
-            title="ContentVerse video project" allowfullscreen loading="lazy">
-          </iframe>
-        </div>
-      </div>
+      <button class="video-project" type="button" data-video="97kyvob3h_E" data-title="Featured edit 02" aria-label="Play Featured edit 02">
+        <img src="https://i.ytimg.com/vi/97kyvob3h_E/hqdefault.jpg" alt="Thumbnail for Featured edit 02" loading="lazy" decoding="async" />
+        <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+      </button>
 
-      <!-- 2 -->
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube-nocookie.com/embed/97kyvob3h_E"
-            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
-        </div> 
-      </div>
+      <button class="video-project video-mobile-extra" type="button" data-video="h23W5Q_LgEQ" data-title="Featured edit 03" aria-label="Play Featured edit 03">
+        <img src="https://i.ytimg.com/vi/h23W5Q_LgEQ/hqdefault.jpg" alt="Thumbnail for Featured edit 03" loading="lazy" decoding="async" />
+        <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+      </button>
 
-      <!-- 3 -->
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube-nocookie.com/embed/h23W5Q_LgEQ"
-            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
-        </div>  
-      </div>
+      <button class="video-project video-mobile-extra" type="button" data-video="B4ySAmZLGWc" data-title="Featured edit 04" aria-label="Play Featured edit 04">
+        <img src="https://i.ytimg.com/vi/B4ySAmZLGWc/hqdefault.jpg" alt="Thumbnail for Featured edit 04" loading="lazy" decoding="async" />
+        <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+      </button>
 
-      <!-- 4 -->
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube-nocookie.com/embed/B4ySAmZLGWc"
-            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
+      <button class="video-project video-mobile-extra" type="button" data-video="az66Sl5pDjI" data-title="Featured edit 05" aria-label="Play Featured edit 05">
+        <img src="https://i.ytimg.com/vi/az66Sl5pDjI/hqdefault.jpg" alt="Thumbnail for Featured edit 05" loading="lazy" decoding="async" />
+        <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+      </button>
 
-      <!-- 5 -->
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube-nocookie.com/embed/az66Sl5pDjI"
-            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-
-      <!-- 6 -->
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube-nocookie.com/embed/D9KjOOJVjDM"
-            title="ContentVerse video project" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-
+      <button class="video-project video-mobile-extra" type="button" data-video="D9KjOOJVjDM" data-title="Featured edit 06" aria-label="Play Featured edit 06">
+        <img src="https://i.ytimg.com/vi/D9KjOOJVjDM/hqdefault.jpg" alt="Thumbnail for Featured edit 06" loading="lazy" decoding="async" />
+        <span class="play-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+      </button>
     </div>
+
+    <button class="mobile-expand-button" id="videosExpandButton" type="button" aria-expanded="false" aria-controls="videosGrid">Show More Works</button>
 
   </div>
 </section>
+
+<dialog class="video-dialog" id="videoDialog" aria-labelledby="videoDialogTitle">
+  <div class="dialog-head">
+    <strong id="videoDialogTitle">Video project</strong>
+    <button type="button" id="closeVideoDialog" aria-label="Close video">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="dialog-video" id="videoDialogFrame"></div>
+</dialog>
 
 <!-- ===== Partnered Brands (Auto Scrolling) ===== -->
 <section id="partners" class="partners-section">
@@ -366,164 +371,164 @@
 
         <!-- ===== SET A ===== -->
         <figure class="logo-item">
-          <img src="Brands/aoi.webp" alt="Ammar's Online Institution (AOI)" loading="lazy" decoding="async">
+          <img src="Assets/Brands/aoi.webp" alt="Ammar's Online Institution (AOI)" loading="lazy" decoding="async">
           <figcaption>Ammar’s Online Institution</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/archibuild.webp" alt="Archibuild Solutions" loading="lazy" decoding="async">
+          <img src="Assets/Brands/archibuild.webp" alt="Archibuild Solutions" loading="lazy" decoding="async">
           <figcaption>Archibuild Solutions</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/bizbro.webp" alt="BizBro Podcast" loading="lazy" decoding="async">
+          <img src="Assets/Brands/bizbro.webp" alt="BizBro Podcast" loading="lazy" decoding="async">
           <figcaption>BizBro Podcast</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/box.webp" alt="Mix Box Studio" loading="lazy" decoding="async">
+          <img src="Assets/Brands/box.webp" alt="Mix Box Studio" loading="lazy" decoding="async">
           <figcaption>Mix Box Studio</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/connectingdots.webp" alt="Connecting Dots" loading="lazy" decoding="async">
+          <img src="Assets/Brands/connectingdots.webp" alt="Connecting Dots" loading="lazy" decoding="async">
           <figcaption>Connecting Dots Bangladesh</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/hazaat.webp" alt="Hazaat" loading="lazy" decoding="async">
+          <img src="Assets/Brands/hazaat.webp" alt="Hazaat" loading="lazy" decoding="async">
           <figcaption>Hazaat</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/samprotik-podcast.webp" alt="Samprotik Podcast" loading="lazy" decoding="async">
+          <img src="Assets/Brands/samprotik-podcast.webp" alt="Samprotik Podcast" loading="lazy" decoding="async">
           <figcaption>Samprotik Podcast</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/intifada-bd.webp" alt="Intifada Bangladesh" loading="lazy" decoding="async">
+          <img src="Assets/Brands/intifada-bd.webp" alt="Intifada Bangladesh" loading="lazy" decoding="async">
           <figcaption>Intifada Bangladesh</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/paygamedin.webp" alt="Pay Game Din" loading="lazy" decoding="async">
+          <img src="Assets/Brands/paygamedin.webp" alt="Pay Game Din" loading="lazy" decoding="async">
           <figcaption>Poygame Deen</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/prephour.webp" alt="Prep Hour Academy" loading="lazy" decoding="async">
+          <img src="Assets/Brands/prephour.webp" alt="Prep Hour Academy" loading="lazy" decoding="async">
           <figcaption>Prep Hour Academy</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/rihla.webp" alt="Rihlah Divine Travels" loading="lazy" decoding="async">
+          <img src="Assets/Brands/rihla.webp" alt="Rihlah Divine Travels" loading="lazy" decoding="async">
           <figcaption>Rihlah Divine Travels</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/ramjan.webp" alt="Ramjan Electronics" loading="lazy" decoding="async">
+          <img src="Assets/Brands/ramjan.webp" alt="Ramjan Electronics" loading="lazy" decoding="async">
           <figcaption>Ramjan Electronics</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/rsbd.webp" alt="RSBD Properties" loading="lazy" decoding="async">
+          <img src="Assets/Brands/rsbd.webp" alt="RSBD Properties" loading="lazy" decoding="async">
           <figcaption>RSBD Properties</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/samprotik-profile.webp" alt="Samprotik" loading="lazy" decoding="async">
+          <img src="Assets/Brands/samprotik-profile.webp" alt="Samprotik" loading="lazy" decoding="async">
           <figcaption>Samprotik</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/sky-holidays.webp" alt="Sky Holidays" loading="lazy" decoding="async">
+          <img src="Assets/Brands/sky-holidays.webp" alt="Sky Holidays" loading="lazy" decoding="async">
           <figcaption>Sky Holidays</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/youth-intifada.webp" alt="Youth Intifada Mohammadpur" loading="lazy" decoding="async">
+          <img src="Assets/Brands/youth-intifada.webp" alt="Youth Intifada Mohammadpur" loading="lazy" decoding="async">
           <figcaption>Youth Intifada Mohammadpur</figcaption>
         </figure>
 
         <!-- ===== DUPLICATE SET A (for seamless loop) ===== -->
         <!-- Copy the SAME items again (exact order) -->
         <figure class="logo-item">
-          <img src="Brands/aoi.webp" alt="Ammar's Online Institution (AOI)" loading="lazy" decoding="async">
+          <img src="Assets/Brands/aoi.webp" alt="Ammar's Online Institution (AOI)" loading="lazy" decoding="async">
           <figcaption>Ammar’s Online Institution (AOI)</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/archibuild.webp" alt="Archibuild Solutions" loading="lazy" decoding="async">
+          <img src="Assets/Brands/archibuild.webp" alt="Archibuild Solutions" loading="lazy" decoding="async">
           <figcaption>Archibuild Solutions</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/bizbro.webp" alt="BizBro Podcast" loading="lazy" decoding="async">
+          <img src="Assets/Brands/bizbro.webp" alt="BizBro Podcast" loading="lazy" decoding="async">
           <figcaption>BizBro Podcast</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/box.webp" alt="Mix Box Studio" loading="lazy" decoding="async">
+          <img src="Assets/Brands/box.webp" alt="Mix Box Studio" loading="lazy" decoding="async">
           <figcaption>Mix Box Studio</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/connectingdots.webp" alt="Connecting Dots" loading="lazy" decoding="async">
+          <img src="Assets/Brands/connectingdots.webp" alt="Connecting Dots" loading="lazy" decoding="async">
           <figcaption>Connecting Dots Bangladesh</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/hazaat.webp" alt="Hazaat" loading="lazy" decoding="async">
+          <img src="Assets/Brands/hazaat.webp" alt="Hazaat" loading="lazy" decoding="async">
           <figcaption>Hazaat</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/intifada-bd.webp" alt="Intifada Bangladesh" loading="lazy" decoding="async">
+          <img src="Assets/Brands/intifada-bd.webp" alt="Intifada Bangladesh" loading="lazy" decoding="async">
           <figcaption>Intifada Bangladesh</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/paygamedin.webp" alt="Pay Game Din" loading="lazy" decoding="async">
+          <img src="Assets/Brands/paygamedin.webp" alt="Pay Game Din" loading="lazy" decoding="async">
           <figcaption>Poygame Din</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/samprotik-podcast.webp" alt="Samprotik Podcast" loading="lazy" decoding="async">
+          <img src="Assets/Brands/samprotik-podcast.webp" alt="Samprotik Podcast" loading="lazy" decoding="async">
           <figcaption>Samprotik Podcast</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/prephour.webp" alt="Prep Hour Academy" loading="lazy" decoding="async">
+          <img src="Assets/Brands/prephour.webp" alt="Prep Hour Academy" loading="lazy" decoding="async">
           <figcaption>Prep Hour Academy</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/rihla.webp" alt="Rihlah Divine Travels" loading="lazy" decoding="async">
+          <img src="Assets/Brands/rihla.webp" alt="Rihlah Divine Travels" loading="lazy" decoding="async">
           <figcaption>Rihlah Divine Travels</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/ramjan.webp" alt="Ramjan Electronics" loading="lazy" decoding="async">
+          <img src="Assets/Brands/ramjan.webp" alt="Ramjan Electronics" loading="lazy" decoding="async">
           <figcaption>Ramjan Electronics</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/rsbd.webp" alt="RSBD Properties" loading="lazy" decoding="async">
+          <img src="Assets/Brands/rsbd.webp" alt="RSBD Properties" loading="lazy" decoding="async">
           <figcaption>RSBD Properties</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/samprotik-profile.webp" alt="Samprotik" loading="lazy" decoding="async">
+          <img src="Assets/Brands/samprotik-profile.webp" alt="Samprotik" loading="lazy" decoding="async">
           <figcaption>Samprotik</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/sky-holidays.webp" alt="Sky Holidays" loading="lazy" decoding="async">
+          <img src="Assets/Brands/sky-holidays.webp" alt="Sky Holidays" loading="lazy" decoding="async">
           <figcaption>Sky Holidays</figcaption>
         </figure>
 
         <figure class="logo-item">
-          <img src="Brands/youth-intifada.webp" alt="Youth Intifada Mohammadpur" loading="lazy" decoding="async">
+          <img src="Assets/Brands/youth-intifada.webp" alt="Youth Intifada Mohammadpur" loading="lazy" decoding="async">
           <figcaption>Youth Intifada Mohammadpur</figcaption>
         </figure>
 
@@ -631,17 +636,23 @@
 
           <!-- Row 1: text -->
           <div class="contact-top">
-            <p><span class="label">Email:</span> *************</p>
-            <p><span class="label">WhatsApp:</span> *************</p>
+            <p>
+              <span class="label">Email:</span>
+              <a class="contact-text-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info.contentverse@gmail.com&amp;su=Project%20Inquiry%20for%20ContentVerse%20Studio" target="_blank" rel="noopener noreferrer">info.contentverse@gmail.com</a>
+            </p>
+            <p>
+              <span class="label">WhatsApp:</span>
+              <a class="contact-text-link" href="https://wa.me/8801955020304?text=Hello%20ContentVerse%20Studio%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">+880 1955-020304</a>
+            </p>
           </div>
 
           <!-- Row 2: icons -->
           <div class="contact-icons">
-            <a href="mailto:your@email.com" class="social-icon">
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info.contentverse@gmail.com&amp;su=Project%20Inquiry%20for%20ContentVerse%20Studio" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Email ContentVerse Studio" title="Email ContentVerse Studio">
               <i class="fa-solid fa-envelope"></i>
             </a>
 
-            <a href="https://wa.me/880XXXXXXXXXX" target="_blank" class="social-icon">
+            <a href="https://wa.me/8801955020304?text=Hello%20ContentVerse%20Studio%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Message ContentVerse Studio on WhatsApp" title="Message on WhatsApp">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
 
@@ -720,7 +731,7 @@
       <!-- Brand -->
       <div class="footer-brand">
         <a class="footer-brand-top" href="#home" aria-label="ContentVerse Studio - back to top">
-          <img src="site-logo.webp" alt="ContentVerse Logo" class="footer-logo-img" width="256" height="256" loading="lazy" decoding="async">
+          <img src="Assets/site-logo.webp" alt="ContentVerse Logo" class="footer-logo-img" width="256" height="256" loading="lazy" decoding="async">
           <h3 class="footer-logo-text">
             ContentVerse <span class="gold-dot">.</span> Studio
           </h3>
@@ -785,9 +796,85 @@
       );
     }
 
-    // Make service details usable on touchscreens and with a keyboard.
-    document.querySelectorAll(".service-flip").forEach(card => {
+    // Load a single YouTube player only after a project is selected.
+    const videoDialog = document.getElementById("videoDialog");
+    const videoDialogTitle = document.getElementById("videoDialogTitle");
+    const videoDialogFrame = document.getElementById("videoDialogFrame");
+    const closeVideoDialogButton = document.getElementById("closeVideoDialog");
+
+    function clearVideoDialog() {
+      if (videoDialogFrame) videoDialogFrame.replaceChildren();
+      document.body.classList.remove("video-dialog-open");
+    }
+
+    document.querySelectorAll(".video-project[data-video]").forEach(project => {
+      project.addEventListener("click", () => {
+        if (!videoDialog || !videoDialogFrame || !videoDialogTitle) return;
+
+        const iframe = document.createElement("iframe");
+        const projectTitle = project.dataset.title || "ContentVerse Studio project";
+        iframe.src = `https://www.youtube-nocookie.com/embed/${project.dataset.video}?autoplay=1&rel=0`;
+        iframe.title = projectTitle;
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+
+        videoDialogTitle.textContent = projectTitle;
+        videoDialogFrame.replaceChildren(iframe);
+        document.body.classList.add("video-dialog-open");
+        videoDialog.showModal();
+      });
+    });
+
+    closeVideoDialogButton?.addEventListener("click", () => videoDialog?.close());
+
+    videoDialog?.addEventListener("click", event => {
+      const bounds = videoDialog.getBoundingClientRect();
+      const clickedBackdrop =
+        event.clientX < bounds.left ||
+        event.clientX > bounds.right ||
+        event.clientY < bounds.top ||
+        event.clientY > bounds.bottom;
+
+      if (clickedBackdrop) videoDialog.close();
+    });
+
+    videoDialog?.addEventListener("close", clearVideoDialog);
+
+    const mobileContentQuery = window.matchMedia("(max-width: 640px)");
+    const serviceCards = document.querySelectorAll(".service-flip");
+
+    function onMobileContentChange(callback) {
+      if (typeof mobileContentQuery.addEventListener === "function") {
+        mobileContentQuery.addEventListener("change", callback);
+      } else {
+        mobileContentQuery.addListener(callback);
+      }
+    }
+
+    function syncServiceCardMode() {
+      serviceCards.forEach(card => {
+        const title = card.querySelector(".service-front .service-back-title")?.textContent.trim() || "service";
+
+        if (mobileContentQuery.matches) {
+          card.classList.remove("is-flipped");
+          card.removeAttribute("role");
+          card.removeAttribute("tabindex");
+          card.removeAttribute("aria-expanded");
+          card.removeAttribute("aria-label");
+        } else {
+          card.setAttribute("role", "button");
+          card.setAttribute("tabindex", "0");
+          card.setAttribute("aria-expanded", String(card.classList.contains("is-flipped")));
+          card.setAttribute("aria-label", `Show details for ${title}`);
+        }
+      });
+    }
+
+    // Keep the flip interaction on larger screens only.
+    serviceCards.forEach(card => {
       const toggleCard = () => {
+        if (mobileContentQuery.matches) return;
         const isOpen = card.classList.toggle("is-flipped");
         card.setAttribute("aria-expanded", String(isOpen));
       };
@@ -800,6 +887,32 @@
         }
       });
     });
+
+    syncServiceCardMode();
+    onMobileContentChange(syncServiceCardMode);
+
+    function setupMobileExpansion(buttonId, containerId, collapsedText, expandedText) {
+      const button = document.getElementById(buttonId);
+      const container = document.getElementById(containerId);
+      if (!button || !container) return;
+
+      button.addEventListener("click", () => {
+        const isExpanded = container.classList.toggle("is-expanded");
+        button.setAttribute("aria-expanded", String(isExpanded));
+        button.textContent = isExpanded ? expandedText : collapsedText;
+      });
+
+      onMobileContentChange(event => {
+        if (!event.matches) {
+          container.classList.remove("is-expanded");
+          button.setAttribute("aria-expanded", "false");
+          button.textContent = collapsedText;
+        }
+      });
+    }
+
+    setupMobileExpansion("servicesExpandButton", "servicesCards", "Show All Services", "Show Fewer Services");
+    setupMobileExpansion("videosExpandButton", "videosGrid", "Show More Works", "Show Fewer Works");
 
     // ---- HERO ANIMATION ----
     const heroStartDelay = 400; // ✅ Delay everything by 1s

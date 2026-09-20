@@ -1,3 +1,3 @@
 # ContentVerse-.-Studio
 
-![alt text](<ContentVerse . Studio-1.png>)
+![alt text](<Unused/ContentVerse . Studio-1.png>)
